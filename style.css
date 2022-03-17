@@ -402,10 +402,10 @@ span.forPara {
 /* faq css */
 .faq {
     width: 100%;
-    padding: 0px 100px;
 }
 .faqcontent {
     width: 100%;
+    padding: 0px 150px;
 }
 .faqHead {
     text-align: center;
@@ -444,6 +444,7 @@ dl.faq button {
     border: none;
     background-color: transparent;
     border-radius: 5px;
+    color: black;
   }
   
   dl dd {
@@ -451,22 +452,21 @@ dl.faq button {
     padding: 0;
     margin-left: 1.5em;
     padding-bottom: 20px;
-    border-bottom: 2px solid #777;
+    border-bottom: 1px solid #777;
   }
   
   dl.faq .desc {
     margin: 0;
-    margin-top: 0.25em;
+    margin-top: 2.25em;
     padding: 0.25em;
     font-size: 110%;
     display: none;
-    background-color: rgb(221, 111, 0);
   }
   
   dl.faq button:hover,
   dl.faq button:focus {
     padding: 2px 6px;
-    background-color: #def;
+    background-color: #def; 
     border: 2px solid #0091f8;
     cursor: pointer;
   }
@@ -484,3 +484,28 @@ dl.faq button {
     top: 2px;
   }
   /* FOR EXPERIMENT END */
+  .priceTable {
+    width: 100%;
+    
+}
+.tablecontent {
+    width: 80%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+
+}
+.tableRow {
+    width: 100%;
+    display: flex;
+    gap: 0px 1px;
+}
+.tableBox {
+    width: 33%;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px 0px;
+    box-shadow: 1px 3px 4px #f1f1f1;
+}
