@@ -7,7 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>SimpleSite.com</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="style.css">
+    <script src="myScript.js"></script>
+    <script src="allInOne.js"></script>
 </head>
 
 <body>
@@ -18,33 +26,71 @@
             <div class="banner">
                 <!--Navbar start-->
                 <div class="nav">
-                    <div class="navcontant">
+                    <div class="navcontant" id="navbar" onscroll="scrollFunction()">
                         <div class="logo">
-                            <a class="log" href="#">SimpleSite</a>
+                            <a class="log" href="INDEX.html">SimpleSite</a>
                         </div>
                         <div class="title">
                             <div class="navcontant1">
-                                <a class="navList" href="#">Customer Service</a>
+                                <a class="navLists" href="CustomerService.html">Customer Service</a>
                             </div>
                             <div class="navcontant2">
-                                <a class="navList" href="#">Features</a>
+                                <a class="navLists" href="Features.html">Features</a>
                             </div>
                             <div class="navcontant3">
-                                <a class="navList" href="#">Themes</a>
+                                <a class="navLists" href="Themes.html">Themes</a>
                             </div>
                         </div>
                         <div class="login">
                             <button class="btn">LOG IN</button>
                         </div>
+                        <div class="hamburger" onclick="toggleMobileMenu(this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                width="512" height="512" x="0" y="0" viewBox="0 0 32 32"
+                                style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                <g>
+                                    <g xmlns="http://www.w3.org/2000/svg" id="Layer_1">
+                                        <path
+                                            d="m29 8h-26c-1.1045 0-2-.8955-2-2s.8955-2 2-2h26c1.1045 0 2 .8955 2 2s-.8955 2-2 2z"
+                                            class=""></path>
+                                        <path
+                                            d="m29 28h-26c-1.1045 0-2-.8955-2-2s.8955-2 2-2h26c1.1045 0 2 .8955 2 2s-.8955 2-2 2z"
+                                            class=""></path>
+                                        <path
+                                            d="m29 18h-26c-1.1045 0-2-.8955-2-2s.8955-2 2-2h26c1.1045 0 2 .8955 2 2s-.8955 2-2 2z"
+                                            class=""></path>
+                                    </g>
+                                </g>
+                            </svg>
+
+
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                            <ul class="mobile-menu">
+                                <li><a class="navLists" href="CustomerService.html">Customer Service</a></li>
+                                <li><a class="navLists" href="Features.html">Features</a></li>
+                                <li> <a class="navLists" href="Themes.html">Themes</a></li>
+                                <li id="login"> <button class="btn">LOG IN</button></li>
+                                
+                            </ul>
+
+
+
+                        </div>
                         <div class="lang">
-                            <img class="myimg" src="https://www.simplesite.com/Images/FrontPage2017/Icons/globe.png">
+                            <i class="fa fa-globe"></i>
                             <select name="language" id="language">
                                 <option>English</option>
                                 <option>Hindi</option>
                                 <option>Aribic</option>
                                 <option>Latin</option>
                             </select>
+
                         </div>
+
+
                     </div>
                 </div>
                 <!--Navbar End-->
@@ -56,7 +102,7 @@
                         <p>- 30-day free trial! -</p>
                     </div>
                     <div class="btns" style="padding: 30px 0px;">
-                        <button><a href="#" style="color: white; text-decoration: none; "> </a>START HEAR</button>
+                        <button><a href="#" style="color: white; text-decoration: none; "> </a>START HERE</button>
                     </div>
                 </div>
             </div>
@@ -135,7 +181,7 @@
                                 website
                                 today!</p>
                             <div class="btnss">
-                                <button><a href="#" style="color: white; text-decoration: none; ">START HEAR
+                                <button><a href="#" style="color: white; text-decoration: none; ">START HERE
                                     </a></button>
                             </div>
                         </div>
@@ -148,17 +194,19 @@
                 <div class="edit">
                     <div class="mobile">
                         <div class="mobileCont">
-                            
+
                             <div class="mobileReady">
                                 <h2 class="hesdderline">MOBILE READY</h2>
                                 <p><span class="forPara">ON-THE-GO</span></p>
                             </div>
                             <div class="mobilem">
                                 <div class="line"></div>
-                                <p style="padding: 15px 0px; line-height: 25px;    font-weight: 300;">What makes SimpleSite stand out is that we are the only website builder that fully
+                                <p style="padding: 15px 0px; line-height: 25px;    font-weight: 300;">What makes
+                                    SimpleSite stand out is that we are the only website builder that fully
                                     supports mobile-friendly editing in a mobile browser - no special app needed! This
                                     means you can view and edit your website on your smartphone.</p>
-                                <p style="padding: 15px 0px; line-height: 25px;    font-weight: 300;">SimpleSite automatically gives you a
+                                <p style="padding: 15px 0px; line-height: 25px;    font-weight: 300;">SimpleSite
+                                    automatically gives you a
                                     website that looks stunning on both desktop and
                                     mobile. On top of that we also have a full mobile-optimized interface that gives you
                                     the
@@ -168,7 +216,7 @@
                                     SimpleSite’s mobile website editor.</p>
                             </div>
                             <div class="mobileButtan">
-                                <button><a href="#" style="color: white; text-decoration: none; ">START HEAR
+                                <button><a href="#" style="color: white; text-decoration: none; ">START HERE
                                     </a></button>
                             </div>
                         </div>
@@ -181,7 +229,7 @@
             </div>
             <!--Mobile End-->
             <!--FEATURE Start-->
-            <div class="feature">
+            <div class="featurea">
                 <div class="featurebody">
                     <h2 class="hesdderline" style="padding: 12px 0px;">FEATURE</h2>
                     <div class="line"></div>
@@ -226,7 +274,7 @@
                                 our frequently asked questions in our customer service section.</p>
                         </div>
                     </div>
-                    <button><a href="#" style="color: white; text-decoration: none; "> </a>START HEAR</button>
+                    <button><a href="#" style="color: white; text-decoration: none; "> </a>START HERE</button>
                 </div>
             </div>
             <!--FEATURE End-->
@@ -236,7 +284,8 @@
                     <div class="footer1">
                         <h3 class="footpara">SIMPLESITE</h3>
                         <div class="line"></div>
-                        <p class="footparas">Our user experience ideals run through every vein of our company. Our ideals are not to
+                        <p class="footparas">Our user experience ideals run through every vein of our company. Our
+                            ideals are not to
                             attain perfection, but rather to attain pleasure. Using our product should feel enjoyable -
                             like playing a game - it should be easy, exciting and uplifting. Something to try and
                             subsequently to learn from. This is the same experience our employees have working for us.
@@ -244,7 +293,8 @@
 
                         <ul class="socialLife">
                             <li><a href="https://www.facebook.com/appwrk/"><img
-                                        src="https://www.simplesite.com/images/Frontpage2017/Icons/fb.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        src="https://www.simplesite.com/images/Frontpage2017/Icons/fb.png"
+                                        alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </li>
                             <li><a href="https://www.youtube.com/channel/UCB89lOpi_SwDBuLQZdrTpLQ"><img
                                         src="https://www.simplesite.com/images/Frontpage2017/Icons/youtube.png"
@@ -259,28 +309,32 @@
                         </ul>
                     </div>
                     <div class="footer2">
-                        <h3 class="footpara">PRODUCT</h3>
-                        <div class="line"></div>
-                        <ul class="footerUl">
+                        <h3 class="footpara"  onclick="showFooterNav('showContent')">PRODUCT&nbsp;&nbsp;<i class="fas fa-angle-right"></i></h3>
+                        <div id="line" class="line"></div>
+                        <ul class="footerUl" id="showContent">
                             <li>Features</li>
                             <li>Themes</li>
                             <li>Gift Certificate</li>
                             <li>Pricing</li>
                         </ul>
+
+                       
+
+
                     </div>
                     <div class="footer3">
-                        <h3 class="footpara">COMPANY</h3>
-                        <div class="line"></div>
-                        <ul class="footerUl">
+                        <h3 class="footpara" onclick="showFooterNav('showCompany')">COMPANY&nbsp;&nbsp;<i class="fas fa-angle-right"></i></h3>
+                        <div  id="line" class="line"></div>
+                        <ul class="footerUl" id="showCompany">
                             <li>Terms of use</li>
                             <li>Privacy Policy</li>
                             <li>Cookie Policy</li>
                         </ul>
                     </div>
                     <div class="footer4">
-                        <h3 class="footpara">COMMUNITY</h3>
-                        <div class="line"></div>
-                        <ul class="footerUl">
+                        <h3 class="footpara" onclick="showFooterNav('showCommunity')">COMMUNITY&nbsp;&nbsp;<i class="fas fa-angle-right"></i></h3>
+                        <div id="line" class="line"></div>
+                        <ul class="footerUl" id="showCommunity">
                             <li>Customer service</li>
                             <li>FAQ</li>
                         </ul>

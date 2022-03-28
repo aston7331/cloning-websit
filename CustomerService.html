@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Service</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <script src="myScript.js"></script>
+    <script src="allInOne.js"></script>
 
 </head>
 
@@ -18,26 +20,64 @@
             <div class="customerSevice">
                 <!--Navbar start-->
                 <div class="nav">
-                    <div class="navcontant">
+                    <div class="navcontant" id="navbar" onscroll="scrollFunction()" >
                         <div class="logo">
-                            <a class="log" href="#">SimpleSite</a>
+                            <a class="log" href="INDEX.html">SimpleSite</a>
                         </div>
                         <div class="title">
                             <div class="navcontant1">
-                                <a class="navList" href="#">Customer Service</a>
+                                <a class="navLists" href="CustomerService.html">Customer Service</a>
                             </div>
                             <div class="navcontant2">
-                                <a class="navList" href="#">Features</a>
+                                <a class="navLists" href="Features.html">Features</a>
                             </div>
                             <div class="navcontant3">
-                                <a class="navList" href="#">Themes</a>
+                                <a class="navLists" href="Themes.html">Themes</a>
                             </div>
                         </div>
                         <div class="login">
                             <button class="btn">LOG IN</button>
                         </div>
+
+                        <div class="hamburger" onclick="toggleMobileMenu(this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                width="512" height="512" x="0" y="0" viewBox="0 0 32 32"
+                                style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                <g>
+                                    <g xmlns="http://www.w3.org/2000/svg" id="Layer_1">
+                                        <path
+                                            d="m29 8h-26c-1.1045 0-2-.8955-2-2s.8955-2 2-2h26c1.1045 0 2 .8955 2 2s-.8955 2-2 2z"
+                                            class=""></path>
+                                        <path
+                                            d="m29 28h-26c-1.1045 0-2-.8955-2-2s.8955-2 2-2h26c1.1045 0 2 .8955 2 2s-.8955 2-2 2z"
+                                            class=""></path>
+                                        <path
+                                            d="m29 18h-26c-1.1045 0-2-.8955-2-2s.8955-2 2-2h26c1.1045 0 2 .8955 2 2s-.8955 2-2 2z"
+                                            class=""></path>
+                                    </g>
+                                </g>
+                            </svg>
+
+
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                            <ul class="mobile-menu">
+                                <li><a class="navLists" href="CustomerService.html">Customer Service</a></li>
+                                <li><a class="navLists" href="Features.html">Features</a></li>
+                                <li> <a class="navLists" href="Themes.html">Themes</a></li>
+                                <li id="login"> <button class="btn">LOG IN</button></li>
+                                
+                            </ul>
+
+
+
+                        </div>
+
+                        
                         <div class="lang">
-                            <img class="myimg" src="https://www.simplesite.com/Images/FrontPage2017/Icons/globe.png">
+                            <i class="fa fa-globe"></i>
                             <select name="language" id="language">
                                 <option>English</option>
                                 <option>Hindi</option>
@@ -280,36 +320,48 @@
                             </dt>
                             <dd>
                                 <div id="faq8_desc" class="desc">
-                                   <p>If you do not wish to renew your PRO or Ecommerce subscription, you have 2 options:</p> 
+                                    <p>If you do not wish to renew your PRO or Ecommerce subscription, you have 2
+                                        options:</p>
 
-                                <p>  1) Deactivate the automatic payment service on the subscription section of your
-                                    website's editor. Once your current subscription expires, your website will go
-                                    offline and will be permanently deleted automatically after 3 months of expired.</p> 
+                                    <p> 1) Deactivate the automatic payment service on the subscription section of your
+                                        website's editor. Once your current subscription expires, your website will go
+                                        offline and will be permanently deleted automatically after 3 months of expired.
+                                    </p>
 
-                                <p>   2) Delete your website immediately, by clicking the delete button on your website's
-                                    editor. A deleted website can no longer be recovered and its content will be lost.</p> 
+                                    <p> 2) Delete your website immediately, by clicking the delete button on your
+                                        website's
+                                        editor. A deleted website can no longer be recovered and its content will be
+                                        lost.</p>
 
-                                <p>   Alternatively, you can send a request to our Customer Service team at
-                                    customerservice@simplesite.com.</p> 
+                                    <p> Alternatively, you can send a request to our Customer Service team at
+                                        customerservice@simplesite.com.</p>
 
-                                <p>   If your subscription was recently renewed automatically, but you do not wish to
-                                    continue with it, you can request a refund within 14 days of the payment date.</p> 
+                                    <p> If your subscription was recently renewed automatically, but you do not wish to
+                                        continue with it, you can request a refund within 14 days of the payment date.
+                                    </p>
                                 </div>
                             </dd>
                             <dt>
-                                <button class="btnTab" type="button" aria-expanded="false" aria-controls="faq9_desc">How many days do I have left before my subscription expires?</button>
+                                <button class="btnTab" type="button" aria-expanded="false" aria-controls="faq9_desc">How
+                                    many days do I have left before my subscription expires?</button>
                             </dt>
                             <dd>
                                 <div id="faq9_desc" class="desc">
-                                    To check the status of your subscirption, log in to your website's editor and visit the subscription section. If your automatic payment service is disabled, we recommend you renew your subscription at least 24 hrs before it expires.
+                                    To check the status of your subscirption, log in to your website's editor and visit
+                                    the subscription section. If your automatic payment service is disabled, we
+                                    recommend you renew your subscription at least 24 hrs before it expires.
                                 </div>
                             </dd>
                             <dt>
-                                <button class="btnTab" type="button" aria-expanded="false" aria-controls="faq10_desc">What do I need to start my business?​</button>
+                                <button class="btnTab" type="button" aria-expanded="false"
+                                    aria-controls="faq10_desc">What do I need to start my business?​</button>
                             </dt>
                             <dd>
                                 <div id="faq10_desc" class="desc">
-                                    Opening a business can be intimidating, especially when you don’t have any prior experience. We’ve got you covered – check our ready-made guides for getting started in different niches, whether you want to find out how to open a Bed & Breakfast, how to start a pizzeria, or open your own massage center.​
+                                    Opening a business can be intimidating, especially when you don’t have any prior
+                                    experience. We’ve got you covered – check our ready-made guides for getting started
+                                    in different niches, whether you want to find out how to open a Bed & Breakfast, how
+                                    to start a pizzeria, or open your own massage center.​
                                 </div>
                             </dd>
                         </dl>
@@ -319,110 +371,160 @@
                     <div id="General" class="btn1">
                         <dl class="faq">
                             <dt>
-                                <button type="button" aria-expanded="false" aria-controls="faq11_desc">What do I do if I
-                                    have a permit for an assigned lot, but can't find a space there?</button>
+                                <button type="button" aria-expanded="false" aria-controls="faq11_desc">I forgot my
+                                    password. What should I do?</button>
                             </dt>
                             <dd>
                                 <div id="faq11_desc" class="desc">
-                                    sgPark at the nearest available parking meter without paying the meter
-                                    and call 999-999-9999 to report the problem. We will note and approve your alternate
-                                    location and will investigate the cause of the shortage in your assigned facility.
+                                    <p>To reset your password visit our login page, click on "Have you forgotten your
+                                        password?", and enter the required information. Then, we will send a password
+                                        reset link to your registered email address. Please remember to check your
+                                        spam/promotions folders in case our email ends there.</p>
+
+                                    <p> If you do not receive the password reset link, or still have problems logging in
+                                        to your website's editor, please contact our customer service team at
+                                        customerservice@simplesite.com, and provide your website's address. We kindly
+                                        ask you to contact us from the email address used to register your website.</p>
                                 </div>
                             </dd>
                             <dt>
-                                <button type="button" aria-expanded="false" aria-controls="faq22_desc">What do I do if I
-                                    lose my permit or if my permit is stolen?</button>
+                                <button type="button" aria-expanded="false" aria-controls="faq22_desc">Can I change the
+                                    name of my SimpleSite website?</button>
                             </dt>
                             <dd>
-                                <div id="faq22_desc" class="desc">You should come to the Parking office and report the
-                                    loss. There is a fee to replace your lost permit. However, if your permit was
-                                    stolen, a
-                                    copy of a police report needs to be submitted along with a stolen parking permit
-                                    form for a fee replacement exemption.
+                                <div id="faq22_desc" class="desc">
+                                    <p>Yes, you can!</p>
+
+                                    <p>If you have a basic free subscription, your website's address is based on your
+                                        username, and you can modify it via the "Account" section of your website's
+                                        editor by changing your "website name". Keep in mind that this will change your
+                                        username as well.</p>
+
+                                    <p>If your website has a domain name, and you wish to change it, please contact our
+                                        customer service team at customerservice@simplesite.com, and provide your
+                                        website's address. We kindly ask you to contact us from the email address used
+                                        to register your website.</p>
                                 </div>
                             </dd>
                             <dt>
-                                <button type="button" aria-expanded="false" aria-controls="faq33_desc">Is there free
-                                    parking on holidays?</button>
+                                <button type="button" aria-expanded="false" aria-controls="faq33_desc">Can I change the
+                                    size of my images?
+                                </button>
                             </dt>
                             <dd>
                                 <div id="faq33_desc" class="desc">
-                                    All facilities are restricted from 2:00 am - 6:00 am on all days. No
-                                    exceptions are made for any holiday or recess except those officially listed as a
-                                    <q>Holidays</q> in the calendar. Please note: 24-hour rental spaces, 24-hour rental
-                                    lots, and
-                                    disabled parking is enforced at all times.
+                                    No, the size of your images is automatically set by the webpage template you chose.
                                 </div>
                             </dd>
                             <dt>
-                                <button type="button" aria-expanded="false" aria-controls="faq44_desc">Do all parking
-                                    facilities have the same
-                                    enforcement rules?</button>
+                                <button type="button" aria-expanded="false" aria-controls="faq44_desc">Can I use my
+                                    SimpleSite website for commercial purposes?</button>
                             </dt>
                             <dd>
                                 <div id="faq44_desc" class="desc">
-                                    Some parking facility restrictions differ from others. Be sure to
-                                    take note of the signs at each lot entrance.
+                                    You can use your SimpleSite for commercial purposes, as long as the content of your
+                                    pages complies with our general Terms & Conditions. You can make use of our
+                                    E-commerce subscription to sell products and services on your website. Please note
+                                    we do not permit website owners to resell their website or domain names to others.
                                 </div>
                             </dd>
                             <dt>
-                                <button type="button" aria-expanded="false" aria-controls="faq55_desc">Do all parking
-                                    facilities have the same enforcement rules?</button>
+                                <button type="button" aria-expanded="false" aria-controls="faq55_desc">Can anyone see my
+                                    SimpleSite?</button>
                             </dt>
                             <dd>
                                 <div id="faq55_desc" class="desc">
-                                    Some parking facility restrictions differ from others. Be sure to
-                                    take note of the signs at each lot entrance.
+                                    Yes. Please note there is NO password protection option for your website. This means
+                                    that everyone who knows the URL of your website can visit it. We recommend you
+                                    always consider carefully what you publish on your website. Avoid publishing
+                                    anything online that is confidential, offensive or unsuitable for public viewing.
+                                    Search engines such as Google and Bing will also be able to index your website.
                                 </div>
                             </dd>
                             <dt>
-                                <button type="button" aria-expanded="false" aria-controls="faq66_desc">Do all parking
-                                    facilities have the same enforcement rules?</button>
+                                <button type="button" aria-expanded="false" aria-controls="faq66_desc">Does SimpleSite
+                                    save my images?</button>
                             </dt>
                             <dd>
                                 <div id="faq66_desc" class="desc">
-                                    Some parking facility restrictions differ from others. Be sure to
-                                    take note of the signs at each lot entrance.
+                                    Yes, but we save them in a different size and format than the images you have on
+                                    your computer of device. We make images smaller to reduce page load times. This
+                                    means that SimpleSite is not a backup for your images or somewhere that you can
+                                    store images. SimpleSite is a place where you can show your images, but remember to
+                                    have a backup of your content before uploading anything.
                                 </div>
                             </dd>
                             <dt>
-                                <button type="button" aria-expanded="false" aria-controls="faq77_desc">Do all parking
-                                    facilities have the same enforcement rules?</button>
+                                <button type="button" aria-expanded="false" aria-controls="faq77_desc">Will there be
+                                    advertising on my website?
+                                </button>
                             </dt>
                             <dd>
                                 <div id="faq77_desc" class="desc">
-                                    Some parking facility restrictions differ from others. Be sure to
-                                    take note of the signs at each lot entrance.
+                                    There are no ads, pop-up boxes or sponsorships from third parties on your website.
                                 </div>
                             </dd>
                             <dt>
-                                <button type="button" aria-expanded="false" aria-controls="faq88_desc">Do all parking
-                                    facilities have the same enforcement rules?</button>
+                                <button type="button" aria-expanded="false" aria-controls="faq88_desc">I have not
+                                    received the SimpleSite weekly newsletter. Why is that?</button>
                             </dt>
                             <dd>
                                 <div id="faq88_desc" class="desc">
-                                    Some parking facility restrictions differ from others. Be sure to
-                                    take note of the signs at each lot entrance.
+                                    <p>Check to make sure your email address is valid and working. Log in and review and
+                                        edit the information you provided when you registered with SimpleSite.com.</p>
+
+                                    <p>The newsletter email could have ended up in your spam folder. If that is the
+                                        case,
+                                        please add SimpleSite.com to your list of safe senders/trusted websites in your
+                                        own
+                                        email settings.</p>
                                 </div>
                             </dd>
                             <dt>
-                                <button type="button" aria-expanded="false" aria-controls="faq99_desc">Do all parking
-                                    facilities have the same enforcement rules?</button>
+                                <button type="button" aria-expanded="false" aria-controls="faq99_desc">Can I make my own
+                                    templates for my SimpleSite website?</button>
                             </dt>
                             <dd>
                                 <div id="faq99_desc" class="desc">
-                                    Some parking facility restrictions differ from others. Be sure to
-                                    take note of the signs at each lot entrance.
+                                    No, at present this is not possible. You can only use the templates available on
+                                    SimpleSite.com. However, we may offer this feature sometime in the future.
                                 </div>
                             </dd>
                             <dt>
-                                <button type="button" aria-expanded="false" aria-controls="faq100_desc">Do all parking
-                                    facilities have the same enforcement rules?</button>
+                                <button type="button" aria-expanded="false" aria-controls="faq100_desc">What is or what
+                                    will be my website address on the Internet?</button>
                             </dt>
                             <dd>
                                 <div id="faq100_desc" class="desc">
-                                    Some parking facility restrictions differ from others. Be sure to
-                                    take note of the signs at each lot entrance.
+                                    <p>Your username becomes your website address. For example, if you choose the
+                                        username
+                                        "Caulfields", then your website address will be caulfields.SimpleSite.com. When
+                                        you
+                                        purchase a SimpleSite subscription, you can choose your own custom domain name,
+                                        for
+                                        example www.caulfields.com.</p>
+
+                                    <p>To subscribe and get your own domain name please click here.</p>
+                                </div>
+                            </dd>
+                            <dt>
+                                <button type="button" aria-expanded="false" aria-controls="faq11_desc">If I buy more
+                                    than one SimpleSite website, will I get a discount?</button>
+                            </dt>
+                            <dd>
+                                <div id="faq11_desc" class="desc">
+                                    We do not offer discounts on multiple purchases.
+                                </div>
+                            </dd>
+                            <dt>
+                                <button type="button" aria-expanded="false" aria-controls="faq12_desc">What are the
+                                    Terms & Conditions on SimpleSite.com?
+                                </button>
+                            </dt>
+                            <dd>
+                                <div id="faq12_desc" class="desc">
+                                    <button style="background-color: none; color: #39A6E9;">Click here to read our Terms
+                                        & Conditions.</button>
                                 </div>
                             </dd>
 
@@ -432,6 +534,25 @@
                 </div>
             </div>
             <!--FAQ End-->
+            <!--CUSTOMER SERVICE Start-->
+            <div class="customer">
+                <div class="costomercontent">
+                    <h2 style="font-weight: 500; font-size: 35px; padding: 10px 0px;">CUSTOMER SERVICE</h2>
+                    <div class="line" style="padding: 10px 0px;"></div>
+                    <p>Email: <span style="color: #336E9D; font-weight: 800;">customerservice@simplesite.com</span></p><br>
+                    <p>We try to respond to all requests within two business days.</p>
+                    <p>Please describe your issue and include the name of your website to make it easier for us to help
+                        you.</p><br>
+                    <p>SimpleSite.com</p>
+                    <p>Toldbodgade 31, 3.tv</p>
+                    <p>1253 Copenhagen K.</p>
+                    <p>Denmark</p>
+                    <p>VAT Reg No: DK27 97 24 54</p>
+                    <p>VAT Reg No: DK27 97 24 54</p>
+                    <p>Owned by SimpleSite ApS VAT Reg No DK10079861</p>
+                </div>
+            </div>
+            <!--CUSTOMER SERVICE End-->
             <!--FOOTER Start-->
             <div class="footer">
                 <div class="foorteMain">

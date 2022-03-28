@@ -1,18 +1,18 @@
 function buttenWrk(evt, aboutButten) {
-    var i, btn1, faqbtn1;
-    btn1 = document.getElementsByClassName("btn1");
-    for (i = 0; i < btn1.length; i++) {
-        btn1[i].style.display = "none";
-    }
-    faqbtn1 = document.getElementsByClassName("faqbtn1");
-    for (i = 0; i < faqbtn1.length; i++) {
-        faqbtn1[i].className = faqbtn1[i].className.replace(" active", "");
-    }
-    document.getElementById(aboutButten).style.display = "block";
-    evt.currentTarget.className += " active";
+  var i, btn1, faqbtn1;
+  btn1 = document.getElementsByClassName("btn1");
+  for (i = 0; i < btn1.length; i++) {
+    btn1[i].style.display = "none";
+  }
+  faqbtn1 = document.getElementsByClassName("faqbtn1");
+  for (i = 0; i < faqbtn1.length; i++) {
+    faqbtn1[i].className = faqbtn1[i].className.replace(" active", "");
+  }
+  document.getElementById(aboutButten).style.display = "block";
+  evt.currentTarget.className += " active";
 }
 // FOR EXPRIMENT ONLY
-'use strict';
+// 'use strict';
 
 /*
  *   @constructorDisclosureButton
@@ -90,3 +90,69 @@ window.addEventListener(
   },
   false
 );
+
+
+
+
+// navbar
+window.onscroll = function () { scrollFunction() };
+// var navbar = document.getElementsByClassName("nav");
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+
+    // console.log(document.getElementsByClassName("navcontant"))
+    // var classVariable =  document.getElementsByClassName("navcontant");
+
+    document.getElementsByClassName("navcontant")[0].classList.add('navListNew');
+    
+
+
+
+  } else {
+
+    document.getElementsByClassName("navcontant")[0].classList.remove('navListNew');
+    
+    
+
+
+  }
+
+//   var classVariable = document.getElementsByClassName("navLists");
+//   for (i = 1; i < classVariable.length; i++) {
+
+//     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+//       document.getElementsByClassName("classVariable")[0].classList.add('listColor');
+
+// console.log("12345")
+
+//     } else {
+
+//       document.getElementsByClassName("classVariable")[0].classList.remove('listColor');
+//       console.log("0000")
+//     }
+//   }
+}
+function toggleMobileMenu(menu) {
+  menu.classList.toggle('open');
+  console.log("gassfdyga")
+}
+
+
+
+var screenWith= screen.width;
+
+function showFooterNav(elementid){
+  if(screenWith < 860){
+    var element= document.getElementById(elementid);
+
+    if (element.style.display == "block"){
+    
+        // document.getElementById('showContent');
+        element.style.display="none";
+    
+    } else {
+        element.style.display="block";
+    }
+  }
+}
