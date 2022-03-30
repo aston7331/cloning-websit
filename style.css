@@ -93,7 +93,7 @@ a.log {
 }
 
 .title {
-    width: 24%;
+    width: 35%;
     font-size: 20px;
     padding: 14px 20px;
     display: flex;
@@ -110,6 +110,10 @@ a.log {
     width: 30%;
     padding: 18px 0px;
 }
+.navcontant4 {
+    width: 30%;
+    padding: 18px 0px;
+}
 .navLists{
     text-decoration: none;
     color: white;
@@ -121,7 +125,7 @@ a.log {
     height: 25px;
 }
 .login{
-    width: 70%;
+    width: 60%;
     text-align: end;
     padding: 20px 0px;
 }
@@ -667,7 +671,7 @@ dl.faq button {
     justify-content: flex-start;
     background-color: rgb(135 135 135);
     width: 200px;
-    height: 15em;
+    height: 20em;
     margin-left: 210px;
   }
   
@@ -686,6 +690,218 @@ dl.faq button {
     list-style-type: none;
     padding: 10px 0px;
   }
+  
+
+  /* ticket css */
+  .bodySection{
+      width: 100%;
+      /* background-color: #0091f8; */
+      padding: 100px 100px;
+      display: flex;
+      background-image: url(./images/train.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  .ticket{
+      width: 50%;
+      
+
+  }
+  .header{
+      width: 100%;
+      display: flex;
+  }
+  .pnr {
+    width: 50%;
+    margin-right: 0.5%;
+    display: flex;
+    background-color: #213D77;
+    text-align: center;
+}
+img.formImg {
+    width: 30px;
+    height: 32px;
+}
+.imgHead {
+    width: 20%;
+    padding:2px 0px;
+}
+.paraHead {
+    width: 80%;
+    color: #ffff;
+    font-weight: 800;
+    padding: 10px 0px;
+}
+.charts {
+    display: flex;
+    margin-left: 0.5%;
+    width: 50%;
+    background-color: #213D77;
+    text-align: center;
+}
+.ticketBookingBody{
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 0px 20px;
+}
+.bannetSection {
+    width: 100%;
+    display: flex;
+}
+
+.formBody {
+    width: 100%;
+    display: flex;
+    padding: 10px 0px;
+}
+
+.fromTo {
+    width: 60%;
+    
+}
+.dateClass {
+    width: 40%;
+    margin: -22px 0px;
+}
+
+.bannerImgs {
+    width: 25%;
+}
+.bannerContent {
+    width: 75%;
+    color: #2F4676;
+    font-size: 18px;
+    padding: 20px 200px;
+}
+img.flagImg {
+    width: 200px;
+    height: 110px;
+}
+input#from {
+    width: 80%;
+    height: 35px;
+    border: 1px solid blue;
+    font-size: 15px;
+    color: #2F4676;
+    font-weight: 400;
+    font-family: inherit;
+}
+.symbol1 {
+    width: 100%;
+    padding: 2px 150px;
+}
+
+.form {
+    width: 100%;
+}
+.to{
+    width: 100%;
+}
+input#to {
+    width: 80%;
+    height: 35px;
+    border: 1px solid blue;
+    font-size: 15px;
+    color: #2F4676;
+    font-weight: 400;
+    font-family: inherit;
+}
+.date {
+    width: 100%;
+}
+.dateHead {
+    width: 100%;
+    font-size: 12px;
+    padding: 5px 5px;
+}
+.datefoot {
+    width: 100%;
+}
+input#date {
+    width: 80%;
+    height: 35px;
+    border: 1px solid blue;
+    font-size: 15px;
+    color: #2F4676;
+    font-weight: 400;
+    font-family: inherit;
+}
+select#class {
+    width: 80%;
+    height: 35px;
+    border: 1px solid blue;
+    font-size: 15px;
+    color: #2F4676;
+    font-weight: 400;
+    font-family: inherit;
+}
+.classes {
+    width: 100%;
+    padding: 28px 0px;
+}
+img.loaded {
+    border-radius: 12px;
+    background-color: #F0F7FA;
+    color: #644377;
+}
+.general,.butnssss {
+    width: 100%;
+    padding: 20px 0px;
+}
+select#general {
+    width: 48%;
+    height: 35px;
+    border: 1px solid blue;
+    font-size: 15px;
+    color: #2F4676;
+    font-weight: 400;
+    font-family: inherit;
+}
+.checkBox {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+}
+.formBtn {
+    background-color: #EE772E;
+    padding: 10px 50px;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+.ticketContent {
+    width: 50%;
+    text-align: center;
+    padding: 180px 0px;
+    color: white;
+    font-size: 32px;
+}
+.formIcon{
+    padding-left: 25px;
+  background: url("https://cdn-icons.flaticon.com/png/512/3138/premium/3138667.png?token=exp=1648551136~hmac=d7511b519b86947e223e6a6dbf9d8b6e") no-repeat left;
+  background-size: 18px;
+}
+.toIcon{
+    padding-left: 25px;
+    background: url("https://as2.ftcdn.net/v2/jpg/02/72/89/67/1000_F_272896745_tlTivOH81qWIVzz34KqFGm8LO3N9hMYQ.jpg") no-repeat left;
+    background-size: 18px;
+}
+.classesIcon{
+    padding-left: 25px;
+    background: url("https://cdn-icons-png.flaticon.com/512/1063/1063299.png") no-repeat left;
+    background-size: 18px;
+}
+.generalIcon{
+    padding-left: 25px;
+    background: url("https://cdn-icons.flaticon.com/png/512/4196/premium/4196707.png?token=exp=1648552237~hmac=ef9dcde52d8e023959fee39d80445277") no-repeat left;
+    background-size: 18px;
+}
 
 
 
@@ -694,14 +910,14 @@ dl.faq button {
 @media (min-width:760px) and (max-width:1500px) {
 
     .logo {
-        width: 25%;
+        width: 20%;
     }
     .title {
-        width: 30%;
+        width: 60%;
         padding: 14px 0px;
     }
     .login {
-        width: 30%;
+        width: 20%;
     }
     .lang {
         width: 10%;
@@ -826,6 +1042,44 @@ dl.faq button {
 }
 #line{
 display: none;
+}
+
+
+
+
+.bodySection {
+    padding: 100px 50px;
+}
+.ticketBookingBody {
+    padding: 0px 10px;
+}
+img.flagImg {
+    width: 132px;
+    height: 80px;
+}
+.bannerImgs {
+    width: 30%;
+}
+.bannerContent {
+    width: 70%;
+    padding: 20px 0px;
+    text-align: center;
+}
+.formBody {
+    flex-wrap: wrap;
+}
+.fromTo {
+    width: 100%;
+}
+.dateClass {
+    width: 100%;
+    margin: 0px 0px;
+}
+select#general {
+    width: 80%;
+}
+.checkBox {
+    grid-template-columns: repeat(2,30%);
 }
     
 }
@@ -1119,6 +1373,49 @@ display: none;
         .navLists {
             
             font-size: 24px;
+        }
+
+
+
+
+
+
+
+
+        .ticketContent{
+            display: none;
+        }
+        .ticket{
+            width: 100%;
+        }
+        .bodySection{
+            width: 100%;
+            padding: 100px 0px;
+            
+        }
+        .header {
+            display: none;
+        }
+        .ticketBookingBody {
+            padding: 30px 0px;
+            border-radius: 20px;
+        }
+        .bannetSection {
+            display: none;
+        }
+        .formBody {
+            flex-wrap: wrap;
+        }
+        .fromTo {
+            width: 100%;
+        }
+        .dateClass {
+            width: 100%;
+            margin: 5px 0px;
+        }
+        form {
+            width: 100%;
+            padding: 0px 10px;
         }
 
 

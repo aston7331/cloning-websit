@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Ticket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="myScript.js"></script>
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="navcontant" id="navbar" onscroll="scrollFunction()">
+            <div class="logo">
+                <a class="log" href="INDEX.html">SimpleSite</a>
+            </div>
+            <div class="title">
+                <div class="navcontant1">
+                    <a class="navLists" href="CustomerService.html">Customer Service</a>
+                </div>
+                <div class="navcontant2">
+                    <a class="navLists" href="Features.html">Features</a>
+                </div>
+                <div class="navcontant3">
+                    <a class="navLists" href="Themes.html">Themes</a>
+                </div>
+                <div class="navcontant4">
+                    <a class="navLists" href="ticket.html">Form</a>
+                </div>
+            </div>
+            <div class="login">
+                <button class="btn">LOG IN</button>
+            </div>
+            <div class="hamburger" onclick="toggleMobileMenu(this)">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 32 32"
+                    style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                    <g>
+                        <g xmlns="http://www.w3.org/2000/svg" id="Layer_1">
+                            <path d="m29 8h-26c-1.1045 0-2-.8955-2-2s.8955-2 2-2h26c1.1045 0 2 .8955 2 2s-.8955 2-2 2z"
+                                class=""></path>
+                            <path d="m29 28h-26c-1.1045 0-2-.8955-2-2s.8955-2 2-2h26c1.1045 0 2 .8955 2 2s-.8955 2-2 2z"
+                                class=""></path>
+                            <path d="m29 18h-26c-1.1045 0-2-.8955-2-2s.8955-2 2-2h26c1.1045 0 2 .8955 2 2s-.8955 2-2 2z"
+                                class=""></path>
+                        </g>
+                    </g>
+                </svg>
+
+
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a class="navLists" href="CustomerService.html">Customer Service</a></li>
+                    <li><a class="navLists" href="Features.html">Features</a></li>
+                    <li> <a class="navLists" href="Themes.html">Themes</a></li>
+                    <li><a class="navLists" href="ticket.html">Form</a></li>
+                    <li id="login"> <button class="btn">LOG IN</button></li>
+
+                </ul>
+
+
+
+            </div>
+            <div class="lang">
+                <i class="fa fa-globe"></i>
+                <select name="language" id="language">
+                    <option>English</option>
+                    <option>Hindi</option>
+                    <option>Aribic</option>
+                    <option>Latin</option>
+                </select>
+
+            </div>
+
+
+        </div>
+
+        <!--Banner end-->
+        <div class="bodySection">
+
+            <div class="ticket">
+                <div class="header">
+                    <div class="pnr">
+                        <div class="imgHead">
+                            <img class="formImg" src="https://www.irctc.co.in/nget/assets/images/icons/pnr.png" alt="">
+                        </div>
+                        <div class="paraHead">
+                            <p>PNR STATUS</p>
+                        </div>
+                    </div>
+                    <div class="charts">
+                        <div class="imgHead">
+                            <img class="formImg" src="https://www.irctc.co.in/nget/assets/images/icons/chart.png"
+                                alt="">
+                        </div>
+                        <div class="paraHead">
+                            <p>CHARTS/VACANCY</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticketBookingBody">
+
+                    <div class="bannetSection">
+                        <div class="bannerImgs">
+                            <img class="flagImg" src="https://www.irctc.co.in/nget/assets/images/logo_top_eng.jpg"
+                                alt="">
+                        </div>
+                        <div class="bannerContent">
+                            <h2 style="font-weight: 800;">BOOK TICKET</h2>
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="formBody">
+                            <div class="fromTo">
+                                <div class="form">
+                                    <!-- <label for="from">Form</label> -->
+                                    <input list="from" class="formIcon" id="from" name="from" placeholder="From">
+
+                                </div>
+                                <div class="symbol1" onclick="swap1()" id="swap" value="Change directions">
+                                    <img width="20" height="20"
+                                        src="https://cdn-icons.flaticon.com/png/512/5436/premium/5436326.png?token=exp=1648542023~hmac=2278e3d6f66eccefe9ae196d79675e9b"
+                                        alt="" title="" class="loaded">
+
+                                </div>
+                                <div class="to">
+                                    <!-- <label for="to">To</label> -->
+                                    <input type="text" class="toIcon" id="to" name="to" placeholder="To">
+                                </div>
+                            </div>
+
+                            <div class="dateClass">
+                                <div class="date">
+                                    <div class="dateHead">
+                                        <label for="date">DD/MM/YYYY*</label>
+                                    </div>
+                                    <div class="datefoot">
+                                        <input type="date" id="date" onclick="dateValidation()" class="form-control"
+                                            name="date">
+                                    </div>
+                                </div>
+
+                                <div class="classes">
+                                    <select name="class" class="classesIcon" id="class">
+                                        <option value="">All Classes</option>
+                                        <option value="">Anubhuti Class (EA)</option>
+                                        <option value="">AC First Class (1A)</option>
+                                        <option value="">Exec. Chair Car (EC)</option>
+                                        <option value="">AC 2 Tire (2A)</option>
+                                        <option value="">First Class (FC)</option>
+                                        <option value="">AC 3 tire (3A)</option>
+                                        <option value="">AC 3 Ecomomy (3E)</option>
+                                        <option value="">AC Chair Car (CC)</option>
+                                        <option value="">Sleeper (SL)</option>
+                                        <option value="">Second Sitting (2S)</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="general">
+                            <select name="general" class="generalIcon" id="general">
+                                <option value="GENERAL" aria-placeholder="">GENERAL</option>
+                                <option value="">LADIES</option>
+                                <option value="">LOWER BIRTH/SR.CITIZEN</option>
+                                <option value="">DIVYAANG</option>
+                                <option value="">TATKAL</option>
+                                <option value="">PRIMIUM TATKAL</option>
+                            </select>
+                        </div>
+                        <div class="checkBox">
+                            <div>
+                                <input type="checkbox" id="divayaang" name="divayaang" checked>
+                                <label for="divayaang">Divayaang Concennin</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="flexible" name="flexible">
+                                <label for="flexible">Flexible with Date</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="train" name="train">
+                                <label for="train">Train with Avalible Berth</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="railways" name="railways">
+                                <label for="railways">Railways Pass Concession</label>
+                            </div>
+
+                        </div>
+                        <div class="butnssss">
+                            <button type="submit" class="formBtn" value="submit">Search</button>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="ticketContent">
+                <h2 style="font-weight:900">INDIAN RAILWAYS</h2>
+                <p>Safty | Security | punctual |</p>
+            </div>
+        </div>
+
+</body>
+
+</html>
