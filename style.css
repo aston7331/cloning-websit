@@ -702,9 +702,11 @@ dl.faq button {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      position: fixed;
     }
   .ticket{
       width: 50%;
+      
       
 
   }
@@ -861,7 +863,7 @@ select#general {
 .checkBox {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,30%);
+    grid-template-columns: repeat(3,33%);
 }
 .formBtn {
     background-color: #EE772E;
@@ -881,6 +883,10 @@ select#general {
     padding: 180px 0px;
     color: white;
     font-size: 32px;
+}
+label {
+    font-size: 18px;
+    font-family: inherit;
 }
 .formIcon{
     padding-left: 25px;
@@ -902,7 +908,21 @@ select#general {
     background: url("https://cdn-icons.flaticon.com/png/512/4196/premium/4196707.png?token=exp=1648552237~hmac=ef9dcde52d8e023959fee39d80445277") no-repeat left;
     background-size: 18px;
 }
-
+.checkBoxProperty{
+    width: 25px;
+    height: 25px;
+}
+.checkBoxDiv {
+    width: 100%;
+}
+.alert{
+    width: 200px;
+    position: relative;
+    float: right;
+    background-color: #0091f8;
+    top: 100px;
+    padding: 10px 10px;
+}
 
 
 
@@ -1043,6 +1063,16 @@ select#general {
 #line{
 display: none;
 }
+.featureHead {
+    width: 100%;
+    margin: 100px 0px;
+}
+.featureList {
+    width: 100%;
+}
+.items {
+    padding: 20px 5px;
+}
 
 
 
@@ -1079,7 +1109,7 @@ select#general {
     width: 80%;
 }
 .checkBox {
-    grid-template-columns: repeat(2,30%);
+    display:block;
 }
     
 }
@@ -1416,6 +1446,9 @@ select#general {
         form {
             width: 100%;
             padding: 0px 10px;
+        }
+        .checkBox {
+            display:block;
         }
 
 
