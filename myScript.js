@@ -223,6 +223,67 @@ function dateValidation() {
   document.getElementById('date').setAttribute('min', new Date().toISOString().split('T')[0])
   // document.getElementById('date').setAttribute('max', new Date().toISOString().split('T')[0])
 
+}
+
+
+function myTicketFunction() {
+  // document.getElementById("submitButton").addEventListener("click", function(event){
+  //   event.preventDefault()
+  // });
+  var bookingFrom = document.getElementById("from").value;
+  document.getElementById("from").value = "";
+  var bookingTo = document.getElementById("to").value;
+  document.getElementById("to").value = "";
+  var bookingDate = document.getElementById("date").value;
+  document.getElementById("date").value = "";
+  var reservationClass = document.getElementById("class").value;
+  document.getElementById("class").value = "";
+  var quota = document.getElementById("general").value;
+  document.getElementById("general").value = "";
+  var time = document.getElementById("appt").value;
+  if (bookingFrom == null || bookingFrom == '' || bookingTo == null || bookingTo == '' || bookingDate == null || bookingDate == '' || reservationClass == null || reservationClass == '' || quota == null || quota == '' ){
+    alert("Not valiud")
+  }
+
+  var booking = true;
+
+  if(bookingFrom == bookingTo){
+    document.getElementById("from").value = "";
+    document.getElementById("to").value = "";
+    booking = false;
+    alert("both text are same please enter different text")
+  }
+
+  if (booking == true) {
+    document.getElementById("fromPlace").innerHTML = bookingFrom;
+    document.getElementById("toPlace").innerHTML = bookingTo;
+    document.getElementById("bookongDate").innerHTML = bookingDate;
+    document.getElementById("bookingClass").innerHTML = reservationClass;
+    document.getElementById("ReservationQuota").innerHTML = quota;
+    document.getElementById("ReservationTime").innerHTML = time;
+  }
+
 
 
 }
+
+// const usernameEl = document.querySelector('#from');
+// const emailEl = document.querySelector('#to');
+// const passwordEl = document.querySelector('#date');
+// const confirmPasswordEl = document.querySelector('#class');
+
+// const form = document.querySelector('#general');
+
+
+// form.addEventListener('submit', function (e) {
+//   const isRequired = value => value === '' ? false : true;
+//   e.preventDefault();
+
+// });
+// function dateInput(){
+//   var inputDate = document.getElementById("date").valu;
+//   document.getElementById('date').setAttribute('min', new Date().toISOString().split('T')[0])
+//   if(inputDate == ){
+
+//   }
+// }

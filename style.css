@@ -702,7 +702,7 @@ dl.faq button {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      position: fixed;
+      /* position: fixed; */
     }
   .ticket{
       width: 50%;
@@ -847,7 +847,18 @@ img.loaded {
     background-color: #F0F7FA;
     color: #644377;
 }
-.general,.butnssss {
+.generalTime {
+    width: 100%;
+    display: flex;
+    padding: 20px 0px;
+}
+.general{
+    width: 60% ;
+}
+.time{
+    width: 40%;
+}
+.butnssss{
     width: 100%;
     padding: 20px 0px;
 }
@@ -915,14 +926,45 @@ label {
 .checkBoxDiv {
     width: 100%;
 }
-.alert{
+/* .alert{
     width: 200px;
     position: relative;
     float: right;
     background-color: #0091f8;
     top: 100px;
     padding: 10px 10px;
+} */
+
+.showTicket {
+    width: 100%;
+    background-color: dimgray;
+    color: white;
 }
+.ticketOneBox{
+    width: 100%;
+    display: flex;
+}
+.bookTicketFrom{
+    width: 50%;
+}
+.bookTicketTo{
+    width: 50%;
+}
+.bookTicketDate{
+    width: 50%;
+}
+.bookTicketClass{
+    width: 50%;
+}
+.bookTicketQuota{
+    width: 50%;
+}
+.bookTicket{
+    width: 50%;
+}
+
+
+
 
 
 

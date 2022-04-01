@@ -116,13 +116,37 @@
                         <h2 style="font-weight: 800;">BOOK TICKET</h2>
                     </div>
                 </div>
-                <form action="">
+                <form class="form" action="">
                     <div class="formBody">
                         <div class="fromTo">
                             <div class="form">
                                 <!-- <label for="from">Form</label> -->
-                                <input list="from" class="formIcon" id="from" name="from" placeholder="From">
-
+                                <input list="city" class="formIcon" id="from" name="city" placeholder="From" required>
+                                <!-- <datalist list="city" id="from" name="city">
+                                    
+                                </datalist> -->
+                                    <!-- <input list="city" id="from" name="city"> -->
+                                    <datalist id="city">
+                                        <option value="BHOPAL JN - BPL">
+                                            <option value="VADODARA JN - BRC">
+                                            <option value="VARANASI JN - BSB">
+                                            <option value="BILASPUR JN - BSP">
+                                            <option value=" BORIVALI - BVI">
+                                            <option value="VIJAYAWADA JN - BZA">
+                                            <option value="KANNUR - CAN">
+                                            <option value="COIMBATORE JN - CBE">
+                                            <option value="CHANDIGARH - CDG">
+                                            <option value="KOZHIKKODE - CLT">
+                                            <option value="KANPUR CENTRAL - CNB">
+                                            <option value="DELHI S ROHILLA - DEE">
+                                            <option value="DELHI - DLI">
+                                            <option value="AHMEDABAD JN - ADI">
+                                            <option value="AGRA CANTT - AGC">
+                                            <option value="AJMER JN - AII">
+                                            <option value="PRAYAGRAJ JN. - PRYJ">
+                                            
+                                    </datalist>
+                                      
                             </div>
                             <div class="symbol1" onclick="swap1()" id="swap" value="Change directions">
                                 <img width="20" height="20"
@@ -132,7 +156,27 @@
                             </div>
                             <div class="to">
                                 <!-- <label for="to">To</label> -->
-                                <input type="text" class="toIcon" id="to" name="to" placeholder="To">
+                                <input list="city" class="toIcon" id="to" name="to" placeholder="To" required>
+                                <datalist id="city">
+                                    <option value="BHOPAL JN - BPL">
+                                        <option value="VADODARA JN - BRC">
+                                        <option value="VARANASI JN - BSB">
+                                        <option value="BILASPUR JN - BSP">
+                                        <option value=" BORIVALI - BVI">
+                                        <option value="VIJAYAWADA JN - BZA">
+                                        <option value="KANNUR - CAN">
+                                        <option value="COIMBATORE JN - CBE">
+                                        <option value="CHANDIGARH - CDG">
+                                        <option value="KOZHIKKODE - CLT">
+                                        <option value="KANPUR CENTRAL - CNB">
+                                        <option value="DELHI S ROHILLA - DEE">
+                                        <option value="DELHI - DLI">
+                                        <option value="AHMEDABAD JN - ADI">
+                                        <option value="AGRA CANTT - AGC">
+                                        <option value="AJMER JN - AII">
+                                        <option value="PRAYAGRAJ JN. - PRYJ">
+                                        
+                                </datalist>
                             </div>
                         </div>
 
@@ -143,39 +187,47 @@
                                 </div>
                                 <div class="datefoot">
                                     <input type="date" id="date" onclick="dateValidation()" class="form-control"
-                                        name="date">
+                                        name="date" required>
                                 </div>
                             </div>
 
                             <div class="classes">
-                                <select name="class" class="classesIcon" id="class">
-                                    <option value="">All Classes</option>
-                                    <option value="">Anubhuti Class (EA)</option>
-                                    <option value="">AC First Class (1A)</option>
-                                    <option value="">Exec. Chair Car (EC)</option>
-                                    <option value="">AC 2 Tire (2A)</option>
-                                    <option value="">First Class (FC)</option>
-                                    <option value="">AC 3 tire (3A)</option>
-                                    <option value="">AC 3 Ecomomy (3E)</option>
-                                    <option value="">AC Chair Car (CC)</option>
-                                    <option value="">Sleeper (SL)</option>
-                                    <option value="">Second Sitting (2S)</option>
+                                <select name="class" class="classesIcon" id="class" required>
+                                    <option value="">All TTYPE CLASS</option>
+                                    <option value="All Classes">All Classes</option>
+                                    <option value="Anubhuti Class (EA)">Anubhuti Class (EA)</option>
+                                    <option value="AC First Class (1A)">AC First Class (1A)</option>
+                                    <option value="Exec. Chair Car (EC)">Exec. Chair Car (EC)</option>
+                                    <option value="AC 2 Tire (2A)">AC 2 Tire (2A)</option>
+                                    <option value="First Class (FC)">First Class (FC)</option>
+                                    <option value="AC 3 tire (3A)">AC 3 tire (3A)</option>
+                                    <option value="AC 3 Ecomomy (3E)">AC 3 Ecomomy (3E)</option>
+                                    <option value="AC Chair Car (CC)">AC Chair Car (CC)</option>
+                                    <option value="Sleeper (SL)">Sleeper (SL)</option>
+                                    <option value="Second Sitting (2S)">Second Sitting (2S)</option>
 
                                 </select>
                             </div>
                         </div>
                     </div>
-
+                    <div class="generalTime">
                     <div class="general">
-                        <select name="general" class="generalIcon" id="general">
+                        <select name="general" class="generalIcon" id="general" required>
+                            <option value="" aria-placeholder="">GENERTAL QUOTA</option>
                             <option value="GENERAL" aria-placeholder="">GENERAL</option>
-                            <option value="">LADIES</option>
-                            <option value="">LOWER BIRTH/SR.CITIZEN</option>
-                            <option value="">DIVYAANG</option>
-                            <option value="">TATKAL</option>
-                            <option value="">PRIMIUM TATKAL</option>
+                            <option value="LADIES">LADIES</option>
+                            <option value="LOWER BIRTH/SR.CITIZEN">LOWER BIRTH/SR.CITIZEN</option>
+                            <option value="DIVYAANG">DIVYAANG</option>
+                            <option value="TATKAL">TATKAL</option>
+                            <option value="PRIMIUM TATKAL">PRIMIUM TATKAL</option>
                         </select>
                     </div>
+                    <div class="time">
+                        <label for="appt">Time:- </label>
+                        <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+                 
+                    </div>
+                </div>
                     <div class="checkBox">
                         <div class="checkBoxDiv">
                             <span><input type="checkbox" id="divayaang" class="checkBoxProperty" name="divayaang"
@@ -197,7 +249,8 @@
 
                     </div>
                     <div class="butnssss">
-                        <button type="submit" class="formBtn" value="submit">Search</button>
+                        <button type="button" id="submitButton" class="formBtn" onclick="myTicketFunction()"
+                            value="submit">Search</button>
 
                     </div>
 
@@ -209,12 +262,44 @@
             <p>Safty | Security | punctual |</p>
         </div>
     </div>
-    <div class="alert">
+    <!-- <div class="alert">
         <div class="alertDiv1">
             <p>ERROR</p>
         </div>
         <div class="alertDiv2">
             <p>Please submit correct input</p>
+        </div>
+    </div> -->
+    <div class="showTicket">
+        <div class="ticketOneBox">
+            <div class="bookTicketFrom">
+                <h3>From :- <span id="fromPlace" style="color: aquamarine;"></span>
+                </h3>
+            </div>
+            <div class="bookTicketTo">
+                <h3>To :- <span id="toPlace" style="color: aquamarine;"></span>
+                </h3>
+            </div>
+        </div>
+        <div class="ticketOneBox">
+            <div class="bookTicketDate">
+                <h3>Date :- <span id="bookongDate" style="color: aquamarine;"></span>
+                </h3>
+            </div>
+            <div class="bookTicketClass">
+                <h3>Class :- <span id="bookingClass" style="color: aquamarine;"></span>
+                </h3>
+            </div>
+        </div>
+        <div class="ticketOneBox">
+            <div class="bookTicketQuota">
+                <h3>Quota :- <span id="ReservationQuota" style="color: aquamarine;"></span>
+                </h3>
+            </div>
+            <div class="bookTicketTime">
+                <h3>Time :- <span id="ReservationTime" style="color: aquamarine;"></span>
+                </h3>
+            </div>
         </div>
     </div>
 
