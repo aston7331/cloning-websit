@@ -241,13 +241,29 @@ function myTicketFunction() {
   var quota = document.getElementById("general").value;
   document.getElementById("general").value = "";
   var time = document.getElementById("appt").value;
-  if (bookingFrom == null || bookingFrom == '' || bookingTo == null || bookingTo == '' || bookingDate == null || bookingDate == '' || reservationClass == null || reservationClass == '' || quota == null || quota == '' ){
-    alert("Not valiud")
-  }
+
 
   var booking = true;
-
-  if(bookingFrom == bookingTo){
+  if (bookingFrom == null || bookingFrom == '') {
+    alert("Not valiud Please enter the vacant place")
+    booking = false;
+  } else if (bookingTo == null || bookingTo == '') {
+    alert("Not valiud Please enter the vacant place")
+    booking = false;
+  } else if (bookingDate == null || bookingDate == '') {
+    alert("date is not fill")
+    booking = false;
+  } else if (reservationClass == null || reservationClass == '') {
+    alert("Please selecte your reservation Class")
+    booking = false;
+  } else if (quota == null || quota == '') {
+    alert("Please selecte your reservation Quota")
+    booking = false;
+  } else if (time == null || time == '') {
+    alert("selecte your time")
+    booking = false;
+  }
+  if (bookingFrom == bookingTo) {
     document.getElementById("from").value = "";
     document.getElementById("to").value = "";
     booking = false;
@@ -255,14 +271,55 @@ function myTicketFunction() {
   }
 
   if (booking == true) {
+  //   var get = JSON.parse(localStorage.getItem('user'));
+  //   console.log(get);
+  //   var ticketPrint = [];
+  //   console.log(ticketPrint);
+  //   if (get!=null){
+  //     ticketPrint.push(get);
+  // }
+  // console.log(ticketPrint, '2');
+
+  
+  //   let bookingData = {
+  //     bookingFrom: bookingFrom,
+  //     bookingTo: bookingTo,
+  //     bookingDate: bookingDate,
+  //     reservationClass: reservationClass,
+  //     quota: quota,
+  //     time: time,
+  //   }
+  //   ticketPrint.push(bookingData);
+
+  //   console.log(ticketPrint, '3');
+  //   // localStorage.setItem('bookingData', JSON.stringify(bookingData));
+  //   localStorage.setItem('user', JSON.stringify(ticketPrint));
+  
+  var bookingDone = JSON.parse(localStorage.getItem("allEntries"));
+  if(bookingDone == null) bookingDone = [];
+  let bookingData = {
+        bookingFrom: bookingFrom,
+        bookingTo: bookingTo,
+        bookingDate: bookingDate,
+        reservationClass: reservationClass,
+        quota: quota,
+        time: time,
+      }
+  localStorage.setItem("entry", JSON.stringify(bookingData));
+  
+  bookingDone.push(bookingData);
+  localStorage.setItem("allEntries", JSON.stringify(bookingDone));
+
+
     document.getElementById("fromPlace").innerHTML = bookingFrom;
     document.getElementById("toPlace").innerHTML = bookingTo;
     document.getElementById("bookongDate").innerHTML = bookingDate;
     document.getElementById("bookingClass").innerHTML = reservationClass;
     document.getElementById("ReservationQuota").innerHTML = quota;
     document.getElementById("ReservationTime").innerHTML = time;
-  }
+    window.open('./images/bookingInfo.html')
 
+  }
 
 
 }

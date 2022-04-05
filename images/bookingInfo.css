@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+}
+thead {
+    width: 100%;
+}
+tr {
+    width: 100%;
+}
+th {
+    width: 16%;
+    background-color: #0020bf;
+    color: white;
+    border: 2px solid black;
+    padding: 10px 0px;
+}
+tbody#table-body {
+    width: 100%;
+}
+td {
+    width: 16%;
+    background-color: #919191;
+    color: white;
+    border: 2px solid #8bff7d;
+    padding: 10px 0px;
+    text-align: center;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bookingInfo.css">
+
+</head>
+
+<body>
+    <div class="bookingBody">
+        <div class="showTicket">
+            <!-- <div class="ticketOneBox">
+                <div class="bookTicketFrom">
+                    <h3>From :- <span id="fromPlace" style="color: aquamarine;"></span>
+                    </h3>
+                    <span id="resultFrom" style="color: brown;"></span>
+                </div>
+                <div class="bookTicketTo">
+                    <h3>TO :- <span id="bookongDate" style="color: aquamarine;"></span>
+                    </h3>
+                    <span id="resultTo" style="color: brown;"></span>
+                </div>
+                <div class="bookTicketClass">
+                    <h3>Class :- <span id="bookingClass" style="color: aquamarine;"></span>
+                    </h3>
+                    <span id="resultClass" style="color: brown;"></span>
+                </div>
+            </div>
+            <div class="ticketOneBox">
+                <div class="bookTicketQuota">
+                    <h3>Quota :- <span id="ReservationQuota" style="color: aquamarine;"></span>
+                    </h3>
+                    <span id="resultQuota" style="color: brown;"></span>
+                </div>
+                <div class="bookTicketTime">
+                    <h3>Time :- <span id="ReservationTime" style="color: aquamarine;"></span>
+                    </h3>
+                    <span id="resultTime" style="color: brown;"></span>
+                </div>
+            </div> -->
+            <div class="data-content" id="myData">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>From</th>
+
+                            <th>To</th>
+
+                            <th>Date</th>
+
+                            <th>Classes</th>
+
+                            <th>General</th>
+
+                            <th>Time</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="table-body">
+
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <script>
+
+        // document.getElementById("result").innerHTML=localStorage.getItem('bookingData')
+        // var stored = JSON.parse(localStorage.getItem('bookingData'));
+        // data = JSON.parse(localStorage.getItem('bookingData'));
+        // document.getElementById("resultFrom").innerHTML= data.bookingFrom;
+        // document.getElementById("resultTo").innerHTML= data.bookingTo;
+        // document.getElementById("resultClass").innerHTML= data.reservationClass;
+        // document.getElementById("resultQuota").innerHTML= data.quota;
+        // document.getElementById("resultTime").innerHTML= data.time;
+        // document.getElementById("resultFrom").innerHTML=
+        // stored.push(obj);
+
+        var bookingDone = JSON.parse(localStorage.getItem("allEntries"));
+
+        var tableData = "";
+        console.log(tableData )
+        for (let i = 0; i < bookingDone.length; i++) {
+
+            tableData += "<tr>" +
+
+                "<td>" + bookingDone[i]['bookingFrom'] + "</td>" +
+
+                "<td>" + bookingDone[i]['bookingTo'] + "</td>" +
+
+                "<td>" + bookingDone[i]['bookingDate'] + "</td>" +
+
+                "<td>" + bookingDone[i]['reservationClass'] + "</td>" +
+
+                "<td>" + bookingDone[i]['quota'] + "</td>" +
+
+
+                "<td>" + bookingDone[i]['time'] + "</td>"
+
+            "</tr>";
+
+            document.getElementById("table-body").innerHTML = tableData;
+
+        }
+    </script>
+</body>
+
+</html>
