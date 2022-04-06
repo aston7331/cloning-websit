@@ -95,7 +95,7 @@ a.log {
 .title {
     width: 35%;
     font-size: 20px;
-    padding: 14px 20px;
+    padding: 14px 40px;
     display: flex;
 }
 .navcontant1 {
@@ -127,7 +127,7 @@ a.log {
 .login{
     width: 60%;
     text-align: end;
-    padding: 20px 0px;
+    padding: 22px 0px;
 }
 button.btn {
     border: none;
@@ -143,7 +143,8 @@ button.btn {
 .lang {
     width: 10%;
     text-align: center;
-    padding: 20px 0px;
+    display: flex;
+    padding: 30px 0px;
 }
 select#language {
     border: none;
@@ -160,7 +161,7 @@ select#language {
 .text{
     width: 100%;
     text-align: center;
-    padding: 400px 0px;
+    padding: 350px 0px;
 }
 button {
     background-color: #B93523;
@@ -185,9 +186,9 @@ button {
 }
 .para{
     color: black;
-    padding: 60px 200px;
+    padding: 60px 150px;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     word-wrap: break-word;
 }
 
@@ -197,11 +198,11 @@ button {
   }
   .container2{
     width: 100%;
-    padding: 100px 0px;
+    padding: 70px 0px;
 
   }
   .hesdderline{
-    font-weight: 500;
+    font-weight: 900;
     font-size: 35px;
   }
   
@@ -228,11 +229,11 @@ button {
     width: 100%;
     text-align: center;
     background-color: #F6F7F9;
-    padding-top: 60px;
+    padding-top: 50px;
   }
   .whyContent{
        color: black;
-       padding: 20px 0px;
+       padding: 10px 0px;
       
   }
   .whyByPart {
@@ -244,7 +245,7 @@ button {
     color: #3E4A57;
     text-align: initial;
     font-weight: 400;
-    padding: 14px 178px;
+    padding: 14px 150px;
     font-size: 18px;
 }
 .part1 {
@@ -255,7 +256,7 @@ button {
     word-wrap: break-word;
 }
 .imgs{
-    width: 80%;
+    width: 90%;
 }
 .btnss{
     text-align: initial;
@@ -267,7 +268,7 @@ button {
 .edit {
     width: 100%;
     display: flex;
-    padding: 100px 0px;
+    padding: 60px 0px;
 }
 .mobile {
     width: 50%;
@@ -345,7 +346,7 @@ span.forPara {
 .footer {
     width: 100%;
     background-color: #333333;
-    padding: 60px 40px;
+    padding: 40px 40px;
 }
 .foorteMain {
     width: 100%;
@@ -356,7 +357,7 @@ span.forPara {
 .footer1{
     width: 30%;
 
-    padding: 0px 65px
+    padding: 0px 30px
 }
 .footer2{
     width: 23%;
@@ -377,7 +378,7 @@ span.forPara {
     list-style-type: none;
     display: flex;
     padding: 20px 0px;
-    font-size: 25px;
+    font-size: 20px;
 }
 .footpara {
     font-weight: 400;
@@ -395,7 +396,7 @@ span.forPara {
     list-style-type: none;
     font-size: 15px;
     font-weight: 400;
-    padding: 25px 4px 0px 0px;
+    padding: 10px 4px 0px 0px;
     line-height: 40px;
 }
 
@@ -426,7 +427,7 @@ span.forPara {
 }
 .faqcontent {
     width: 100%;
-    padding: 100px 150px;
+    padding: 70px 150px;
 }
 .faqHead {
     text-align: center;
@@ -474,7 +475,7 @@ dl.faq button {
     padding: 0;
     margin-left: 1.5em;
     padding-bottom: 20px;
-    border-bottom: 1px solid #777;
+    border-bottom: 1px solid #c5c5c5;
   }
   
   dl.faq .desc {
@@ -569,7 +570,7 @@ dl.faq button {
 .featureImg {
     width: 70px;
     height: 60px;
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 
 
@@ -584,7 +585,7 @@ dl.faq button {
      background-size: cover;
 }
 .themes {
-    padding: 100px 0px;
+    padding: 50px 0px;
 }
 
 .themeItem {
@@ -595,9 +596,10 @@ dl.faq button {
 .listItems {
     width: 33.35%;
     padding: 35px 20px;
+    word-break: break-all;
 }
 .themeImg {
-    width: 570px;
+    width: 100%;
 }
 .listtitle {
     width: 85%;
@@ -646,7 +648,12 @@ dl.faq button {
     height: 20px;
 }
 
-
+.check1 {
+    width: 90%;
+}
+.check {
+    width: 10%;
+}
 
 
 
@@ -828,6 +835,8 @@ input#date {
     color: #2F4676;
     font-weight: 400;
     font-family: inherit;
+    position: relative;
+   
 }
 select#class {
     width: 80%;
@@ -863,7 +872,7 @@ img.loaded {
     padding: 20px 0px;
 }
 select#general {
-    width: 48%;
+    width: 80%;
     height: 35px;
     border: 1px solid blue;
     font-size: 15px;
@@ -901,7 +910,7 @@ label {
 }
 .formIcon{
     padding-left: 25px;
-  background: url("https://cdn-icons.flaticon.com/png/512/3138/premium/3138667.png?token=exp=1648551136~hmac=d7511b519b86947e223e6a6dbf9d8b6e") no-repeat left;
+  background: url("https://cdn-icons.flaticon.com/png/512/3138/premium/3138667.png?token=exp=1649155046~hmac=1248efb9700a1ab7f73fa8693b519ab6") no-repeat left;
   background-size: 18px;
 }
 .toIcon{
@@ -916,15 +925,51 @@ label {
 }
 .generalIcon{
     padding-left: 25px;
-    background: url("https://cdn-icons.flaticon.com/png/512/4196/premium/4196707.png?token=exp=1648552237~hmac=ef9dcde52d8e023959fee39d80445277") no-repeat left;
+    background: url("https://cdn-icons.flaticon.com/png/512/4196/premium/4196707.png?token=exp=1649245546~hmac=9f602334859ae2219d9fda2a39fed5ff") no-repeat left;
+    background-size: 18px;
+}
+.dateIcon{
+    /* padding-left: 25px; */
+    padding: 0px 20px;
+    background: url("https://cdn-icons.flaticon.com/png/512/591/premium/591638.png?token=exp=1649245008~hmac=65b96e48c2a8da16cf9699e168ef458e") no-repeat left;
     background-size: 18px;
 }
 .checkBoxProperty{
-    width: 25px;
+    width: 15px;
     height: 25px;
 }
 .checkBoxDiv {
     width: 100%;
+    display: flex;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+input#appt {
+    position: relative;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
 }
 /* .alert{
     width: 200px;
@@ -963,7 +1008,16 @@ label {
     width: 50%;
 }
 
-
+.featureParaTag{
+    font-size: 16px; 
+    font-weight: 200;
+}
+.faqbody {
+    line-height: 60px;
+}
+select#language {
+    display: block;
+}
 
 
 
@@ -1153,6 +1207,15 @@ select#general {
 .checkBox {
     display:block;
 }
+.footpara {
+
+    font-size: 30px;
+    border-bottom: 1px solid #646262;
+}
+.abc{
+    font-size: 30px;
+    border-bottom: none;
+}
     
 }
 
@@ -1204,13 +1267,14 @@ select#general {
      .part1{
          width: 100%;
          padding: 10px 20px;
+         order: 1;
      }
      .part2{
         width: 100%;
     }
     .pa{
         padding: 14px 20px;
-        font-size: 20px;
+        font-size: 15px;
     }
     .btnss {
         
@@ -1252,19 +1316,25 @@ select#general {
      }
      .featurebody {
         
-        padding: 60px 5px;
+        padding: 80px 5px;
     }
 
 
 .footpara {
 
-    font-size: 3s0px;
+    font-size: 30px;
+    border-bottom: 1px solid #646262;
+}
+.abc{
+    font-size: 30px;
+    border-bottom: none;
 }
 .footparas {
     font-size: 20px;
+    
 }
 .footerUl {
-    font-size: 20px;
+    font-size: 15px;
     display: none;
 }
 
@@ -1274,7 +1344,7 @@ select#general {
     }
     .paras {
         padding:0px;
-        font-size: 16px;
+        font-size: 15px;
        
     }
     .featureContent {
@@ -1305,6 +1375,8 @@ select#general {
     .footer1 {
         width: 100%;
         padding: 10px 10px;
+        order: 1;
+    margin-top: 50px;
     }
     .footer2 {
         width: 100%;
@@ -1335,15 +1407,15 @@ select#general {
       }
       a.log {
         
-        font-size: 45px;
+        font-size: 35px;
     }
 
     .hesdderline {
         
-        font-size: 45px;
+        font-size: 30px;
     }
     p {
-        font-size: 20px;
+        font-size: 15px;
     }
       
       dl.faq button {
@@ -1357,14 +1429,17 @@ select#general {
     }
     .containTheme {
         width: 100%;
-        height: auto;
+        /* height: auto; */
         
     }
     .tablecontent {
         width: 100%;
     }
+    select#language {
+        display: none;
+    }
     
-        .title, .login, .lang{
+        .title, .login{
             display:none;
         }
         .hamburger{
@@ -1387,7 +1462,7 @@ select#general {
 
         .faq {
             width: 100%;
-            padding: 0px 30px;
+            padding: 0px 20px;
         }
         .customer {
             width: 100%;
@@ -1501,6 +1576,11 @@ select#general {
             .sidenav {padding-top: 15px;}
             .sidenav a {font-size: 18px;}
           
+}
+@media (min-width:1500px) {
+    .fa-angle-right{
+        display: none;
+    }
 }
         
     

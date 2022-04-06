@@ -99,7 +99,7 @@
             <div class="themes">
                 <div class="themeList">
                     <div class="listtitle">
-                        <h2 style="font-size: 30px; font-weight: 200;">EXAMPLES OF OUR <span
+                        <h2 style="font-size: 30px; font-weight: 200;    line-height: 35px; letter-spacing: 2px;">EXAMPLES OF OUR <span
                                 style="font-weight: 500;">BEAUTIFUL WEBSITE THEMES</span></h2>
                         <div class="line"></div>
                         <p style="font-weight: 200; font-size: 18px; padding-bottom: 70px;">We’ve made sure there are
@@ -221,28 +221,35 @@
                         </ul>
                     </div>
                     <div class="footer2">
-                        <h3 class="footpara">PRODUCT</h3>
-                        <div class="line"></div>
-                        <ul class="footerUl">
+                        <h3 class="footpara" onclick="showFooterNav('showContent')">PRODUCT&nbsp;&nbsp;<i
+                                class="fas fa-angle-right"></i></h3>
+                        <div id="line" class="line"></div>
+                        <ul class="footerUl" id="showContent">
                             <li>Features</li>
                             <li>Themes</li>
                             <li>Gift Certificate</li>
                             <li>Pricing</li>
                         </ul>
+
+
+
+
                     </div>
                     <div class="footer3">
-                        <h3 class="footpara">COMPANY</h3>
-                        <div class="line"></div>
-                        <ul class="footerUl">
+                        <h3 class="footpara" onclick="showFooterNav('showCompany')">COMPANY&nbsp;&nbsp;<i
+                                class="fas fa-angle-right"></i></h3>
+                        <div id="line" class="line"></div>
+                        <ul class="footerUl" id="showCompany">
                             <li>Terms of use</li>
                             <li>Privacy Policy</li>
                             <li>Cookie Policy</li>
                         </ul>
                     </div>
                     <div class="footer4">
-                        <h3 class="footpara">COMMUNITY</h3>
-                        <div class="line"></div>
-                        <ul class="footerUl">
+                        <h3 class="footpara" onclick="showFooterNav('showCommunity')">COMMUNITY&nbsp;&nbsp;<i
+                                class="fas fa-angle-right"></i></h3>
+                        <div id="line" class="line"></div>
+                        <ul class="footerUl" id="showCommunity">
                             <li>Customer service</li>
                             <li>FAQ</li>
                         </ul>
